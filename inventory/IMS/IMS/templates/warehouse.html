@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomePage</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #343a40;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: black;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 6px;
+            min-height: 60vh;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+   </head>
+<body>
+    <header>
+        Aarohan Inventory Management System
+    </header>
+    <nav class="nav flex-column">
+        <a href="{{ url_for('index') }}">Homepage</a>
+        <a href="{{ url_for('warehouse') }}">Warehouse</a>
+        <a href="{{ url_for('washing') }}">Washing</a>
+        <a href="{{ url_for('stitching') }}">Stitching</a>
+        <a href="{{ url_for('checking') }}">Checking</a>
+        <a href="{{ url_for('washableproduct') }}">Washable Product</a>
+        <a href="{{ url_for('nonwashableproduct') }}">Non Washable Product</a>
+        <a href="{{ url_for('finishing') }}">Finishing</a>
+
+</nav>
+    <main>
+
+        <label>Product name:</label>
+        <input type="text" name="text">
+
+    <label>Category:</label>
+        <input type="text" name="text">
+
+<label>Quantity:</label>
+        <input type="text" name="text">
+
+<label>Date:</label>
+        <input type="text" name="text">
+    </main>
+    <footer>
+        &copy; 2025 Aarohan Fashion Craft. All rights reserved.
+    </footer>
+    </html>
